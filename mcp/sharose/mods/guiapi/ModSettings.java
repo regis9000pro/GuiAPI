@@ -64,13 +64,13 @@ public class ModSettings {
 	 */
 	public static File getAppDir(String app) {
 		try {
-			return new File(Minecraft.getMinecraftDir(), app)
+			return new File(Minecraft.getMinecraft().mcDataDir, app)
 					.getCanonicalFile(); // Attempt to clean it up a bit.
 		} catch (IOException e) {
 			// If it can't be cleaned for whatever reason, just return the
 			// 'unclean' path. Normally I would just add throws, but that might
 			// break other mods.
-			return new File(Minecraft.getMinecraftDir(), app);
+			return new File(Minecraft.getMinecraft().mcDataDir, app);
 		}
 	}
 

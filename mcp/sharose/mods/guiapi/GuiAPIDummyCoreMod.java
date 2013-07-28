@@ -4,7 +4,7 @@ import java.util.Map;
 
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 
-@IFMLLoadingPlugin.MCVersion("1.5.1")
+@IFMLLoadingPlugin.MCVersion("1.6.2")
 public class GuiAPIDummyCoreMod implements IFMLLoadingPlugin {
 	@Override
 	public String[] getLibraryRequestClass() {
